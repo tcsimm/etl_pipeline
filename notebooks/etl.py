@@ -14,7 +14,7 @@ FILES = {
     "customers": os.path.join(DATA_DIR, "/Users/thomassimmons/c/new/data/customers.csv"),
 }
 DB_PATH = os.path.join(DATA_DIR, "retail.db")
-IF_EXISTS = "replace"  # 'fail' | 'replace' | 'append'
+IF_EXISTS = "replace" 
 
 # ---------- HELPERS ----------
 def snake(s: str) -> str:

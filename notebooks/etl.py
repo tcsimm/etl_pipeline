@@ -5,7 +5,7 @@ import sqlite3
 from datetime import datetime
 import pandas as pd
 
-# ---------- CONFIG ----------
+# config 
 DATA_DIR = "/Users/thomassimmons/c/new/data"
 FILES = {
     "products": os.path.join(DATA_DIR, "/Users/thomassimmons/c/new/data/products.csv"),
@@ -15,7 +15,6 @@ FILES = {
 }
 DB_PATH = os.path.join(DATA_DIR, "retail.db")
 IF_EXISTS = "replace"  # 'fail' | 'replace' | 'append'
-CHUNK_SIZE = None      # set to an int (e.g., 100_000) if your CSVs are large
 
 # ---------- HELPERS ----------
 def snake(s: str) -> str:

@@ -16,7 +16,7 @@ FILES = {
 DB_PATH = os.path.join(DATA_DIR, "retail.db")
 IF_EXISTS = "replace" 
 
-# ---------- HELPERS ----------
+# helper functions
 def snake(s: str) -> str:
     s = s.strip()
     s = re.sub(r"[^\w]+", "_", s)
@@ -56,21 +56,19 @@ def dedupe(df: pd.DataFrame, key_cols: list[str] | None = None) -> pd.DataFrame:
     return df.drop_duplicates(keep="first").reset_index(drop=True)
 
 def read_csv_flex(path: str) -> pd.DataFrame:
-    # Try sensible defaults. If you know your separators/encodings, set them explicitly.
     return pd.read_csv(path, low_memory=False)
 
 def write_df(con, name: str, df: pd.DataFrame):
     df.to_sql(name, con, if_exists=IF_EXISTS, index=False)
 
 def add_indexes(con, table: str, indexes: list[tuple[str, str]]):
-    # indexes: [(index_name, column_expression)]
     cur = con.cursor()
     for idx_name, col_expr in indexes:
         cur.execute(f'DROP INDEX IF EXISTS "{idx_name}"')
         cur.execute(f'CREATE INDEX "{idx_name}" ON "{table}" ({col_expr})')
     con.commit()
 
-# ---------- EXTRACT ----------
+# extract portion
 def extract() -> dict[str, pd.DataFrame]:
     dfs = {}
     for name, path in FILES.items():
@@ -82,7 +80,7 @@ def extract() -> dict[str, pd.DataFrame]:
         dfs[name] = df
     return dfs
 
-# ---------- TRANSFORM ----------
+# transform portion
 def transform(dfs: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     # Guess common numeric/date fields and coerce if present
     numeric_candidates = {
@@ -113,7 +111,6 @@ def transform(dfs: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
             key = [c for c in ["order_id", "id"] if c in df.columns][:1]
             df = dedupe(df, key_cols=key or None)
         elif name == "order_items":
-            # Often order_items has a surrogate key or is unique on (order_id, product_id, maybe line_number)
             key = [k for k in ["order_item_id", "id"] if k in df.columns][:1]
             sub = [k for k in ["order_id", "product_id", "line_number"] if k in df.columns]
             df = dedupe(df, key_cols=key or (sub if len(sub) >= 2 else None))

@@ -1,0 +1,20 @@
+product_id,product_name,category,list_price
+1001,Product 1001,clothing,"$124,71"
+1002,Product 1002,grocery,$17.81
+1002,Product 1002 ,grocery,$17.81
+1003,Product 1003,Home,$211.50
+1004,Product 1004,Home,$80.27
+1004,Product 1004 ,Home,$80.27
+1005,Product 1005,Electronics,
+1006,Product 1006,Electronics,$277.36
+1007,Product 1007,  grocery ,$331.65
+1008,Product 1008,Electronics,$417.55
+1009,Product 1009,Clothing,$305.74
+1010,Product 1010,toys,$345.02
+1011,Product 1011,  electronics ,$159.78
+1012,Product 1012,Clothing,$199.63
+1013,Product 1013,Home,$374.27
+1014,Product 1014,  Home ,$26.42
+1015,Product 1015,Toys,$299.16
+1016,Product 1016,  Electronics ,$442.74
+1017,Product 1017,Books,$477.05

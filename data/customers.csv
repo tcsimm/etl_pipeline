@@ -1,0 +1,39 @@
+customer_id,customer_name,email,phone,city
+5001,Jordan Davis,Jordan.Davis14@example.com,4893252880,boston
+5002,Casey Brown,CASEY.BROWN31@EXAMPLE.COM,911-718-2278,Miami
+5003,Taylor Davis,Taylor.Davis97@example.com,(346) 578-7133,Austin
+5004,Drew Garcia,DREW.GARCIA1@EXAMPLE.COM,031-051-8347,Seattle
+5005,Drew Wilson,DREW.WILSON61@EXAMPLE.COM,(763) 116-5667,seattle
+5006,Jamie Nguyen,JAMIE.NGUYEN14@EXAMPLE.COM,+1 387 262 4731,Miami
+5007,Alex Davis,Alex.Davis2@example.com,(326) 773-6026,Chicago
+5008,Morgan Brown,Morgan.Brown55@example.com, 872.343.0980 ,Austin
+5009,Avery Smith,Avery.Smith8@example.com,1219136193,austin
+5010,Drew Wilson,Drew.Wilson67@example.com, (435) 346-2475 ,Austin
+5011,Sam Patel,SAM.PATEL69@EXAMPLE.COM,425.135.4278,Miami
+5012,Alex Davis,Alex.Davis39@example.com,124-118-2449,New York
+5013,Riley Davis,Riley.Davis63@example.com,+1 016 400 5242,San Francisco
+5014,Sam Patel,Sam.Patel89@example.com,805.982.6204,Miami
+5015,Alex Nguyen,Alex.Nguyen27@example.com, (158) 692-3226 ,Chicago
+5016,Jamie Garcia,JAMIE.GARCIA35@EXAMPLE.COM, 160-733-7543 ,New York
+5017,Riley Patel,Riley.Patel99@example.com, (868) 501-4294 ,San Francisco
+5018,Casey Kim,Casey.Kim78@example.com,169-340-6088,Boston
+5019,Casey Wilson,Casey.Wilson41@example.com,148-465-6482,San Francisco
+5020,Jordan Wilson,Jordan.Wilson73@example.com,+1 804 436 9957,New York
+5021,Jordan Patel,Jordan.Patel37@example.com,951-343-3200,Austin
+5022,Sam Martinez,Sam.Martinez54@example.com, 936-763-2016 ,Seattle
+5023,Alex Davis,Alex.Davis32@example.com,1727889579,Austin
+5024,Jordan Martinez,Jordan.Martinez58@example.com,348.734.7143,austin
+5025,Jordan Garcia,Jordan.Garcia50@example.com,+1 316 658 7603,Miami
+5026,Alex Wilson,Alex.Wilson49@example.com,546.688.9373,Boston
+5027,Jamie Smith,Jamie.Smith60@example.com, +1 980 699 0162 ,Chicago
+5028,Taylor Martinez,Taylor.Martinez42@example.com,646-417-0805,Miami
+5029,Alex Lee,ALEX.LEE32@EXAMPLE.COM,092.327.1937,New York
+5030,Sam Smith,SAM.SMITH40@EXAMPLE.COM,049.663.1931,Austin
+5031,Drew Lee,Drew.Lee45@example.com,+1 518 506 7165,San Francisco
+5032,Avery Brown,Avery.Brown79@example.com,+1 877 694 5314,San Francisco
+5033,Jamie Nguyen,Jamie.Nguyen4@example.com, 5273545494 ,new york
+5034,Jamie Martinez,Jamie.Martinez72@example.com,7770143634,Austin
+5035,Jamie Davis,Jamie.Davis43@example.com, 744-431-3518 ,Seattle
+5034,Jamie Martinez ,Jamie.Martinez72@example.com,7770143634,Austin
+5007,Alex Davis ,Alex.Davis2@example.com,(326) 773-6026,Chicago
+5019,Casey Wilson ,casey.wilson41@example.com,148-465-6482,San Francisco
